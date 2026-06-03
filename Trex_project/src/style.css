@@ -1,0 +1,41 @@
+body{
+background-color: #fafafa;
+}
+
+#desert{
+  background-image: url('img/t-rex-background.png');
+  background-repeat: repeat-x;
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  height: 250px;
+  animation: backgroundAnimation 1500s infinite linear;
+  -webkit-animation: backgroundAnimation 1500s infinite linear;;
+}
+
+
+.dino{
+  position: absolute;
+  bottom: 30px;
+  background-image: url(img/t-rex.png);
+  width: 60px;
+  height: 60px;
+}
+
+.cactus{
+  position: absolute;
+  bottom: 30px;
+  background-image: url(img/cacti.png);
+  width: 60px;
+  height: 60px;
+
+}
+
+@keyframes backgroundAnimation{
+  from{
+    background-position: 70000%;
+  }
+  to{
+    background-position: 0%;
+  }
+}
